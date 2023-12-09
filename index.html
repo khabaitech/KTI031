@@ -24,88 +24,93 @@
       padding: 0;
       box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
+    }
 
-      #body {
-        background: ##081b29;
-        color: #ededed;
-      }
+    #body {
+      background: #081b29;
+      color: #ededed;
+    }
 
-      .header {
-        position: fixe;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 20px 10%;
-        background: transparent;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 100;
+    .header {
+      position: fixe;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 10%;
+      background: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+    span{
+      color: #00abf0;
+    }
 
+    .logo {
+      color: #ededed;
+      text-decoration: none;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
 
-      }
+    .navbar a {
+      font-size: 18px;
+      color: #ededed;
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 35px;
+      transition: .3s
+    }
 
-      .logo {
-        font-size: 25px;
-        color: #ededed;
-        text-decoration: none;
-        font-weight: 600;
-      }
+    .navbar a:hover,
+    .navbar a.active 
+    {
+      color: #00abf0;
+    }
 
-      .navbar a {
-        font-size: 18px;
-        color: #ededed;
-        text-decoration: none;
-        font-weight: 500;
-        margin-left: 35px;
-        transition: .3s
-      }
+    .mask-custom {
+      backdrop-filter: contrast(140%);
+      brightness(100%) saturate(100%);
+      sepia(50%) hue-rotate(0deg);
+      grayscale(0%) invert(0%) blur(0px);
+      mix-blend-mode: lighten;
+      background: rgba(161, 44, 199, 0.31);
+      opacity: 1;
+    }
 
-      .navbar a:hover,
-      .navbar a.active {
-        color: #00abf0;
-      }
+    .home {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 0 10%;
 
-      .mask-custom {
-        backdrop-filter: contrast(140%) brightness(100%) saturate(100%) sepia(50%) hue-rotate(0deg) grayscale(0%) invert(0%) blur(0px);
-        mix-blend-mode: lighten;
-        background: rgba(161, 44, 199, 0.31);
-        opacity: 1;
-      }
+    }
 
-      .home {
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        padding: 0 10%;
+    .home-content {
+      max-width: 600px;
+    }
 
-      }
+    .home-content h1 {
+      font-size: 56px;
+      font-weight: 700;
+      color: #FF00FF;
+    }
 
-      .home-content {
-        max-width: 600px;
-      }
+    .home-content h3 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #00abf0;
+    }
 
-      .home-content h1 {
-        font-size: 56px;
-        font-weight: 700;
-        color: #FF00FF;
-      }
+    .my_pic {
+      position: absolute;
+    }
 
-      .home-content h3 {
-        font-size: 32px;
-        font-weight: 700;
-        color: #00abf0;
-        }
-        .my_pic{
-          position: absolute;
-        }
-        }
-      }
-      #about{
-        color: #ADD8E6;
-      }
-
-    
+    #about {
+      color: #ADD8E6;
+    }
 
     p span.c1 {
       color: #E53D30;
@@ -188,33 +193,30 @@
       color: #62f711;
     }
 
-    body {
-      background: black;
-    }
-
-    blink {
+     blink {
       font-size: 20px;
       font-weight: bold;
       color: #2d38be;
     }
-    
-    
-    
+     body {
+       background:#000000;
+      
+    }
+    .about{
+          color :#00abf0
+          }
   </style>
-
-
-
 </head>
 
 <body>
   <header class="header">
-    <a href="#" class="logo">Satyam.</a>
+    <div class="logo"><span>S</span>atyam.</div>
     <nav class="navbar">
-      <a href="#" class="active">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Contact</a>
+      <a href="HOME" class="active">Home</a>
+      <a href="ABOUT">About</a>
+      <a href="SERVICE">Services</a>
+      <a href="PORTFOLIO">Portfolio</a>
+      <a href="CONTACT">Contact</a>
     </nav>
 
   </header>
@@ -222,106 +224,142 @@
     <div class="home-content">
       <h1>Hi! I'm Satyam kumar</h1>
       <h3>Frontend Developer</h3>
-
-
+      <h3>Learner</h3>
     </div>
- <div class="col-lg-4 col-md-6 mb-4">
-          <img src="7.jpg" alt="Five Lands National Park"  width="100%"/>
-        </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <img src="/1701145981951.jpg" alt="Five Lands National Park" width="100%" />
+    </div>
+
   </section>
-
-
-
+  <center>
   <div class="col-md-7 p-5" id="about">
-    <br>
-    <h2> Satyam Kumar </h2>
-    Let me introduce myself, My name is Satyam. I was born on 12th November 2006.
-    <br><br>
+    <h2 class="background-primary"> Satyam Kumar </h2>
+    Let me introduce myself, My name is Satyam. I was born on 23th December 2006.
     A bit meager, is it not? This is why I've now decided to write my portfolio to let my readers know who really I am.
+   
   </div>
-  </div>
-  <div class="container-fluid">
+  </center>
+
+
+  <div class="container">
     <div class="row">
       <div class="col-md-1">
-        <h1 style class="red" mt-4">~About~</h1>
+      <div class="logo"><span>~ABOUT~</span>
       </div>
-      <div class=" col-md-11 mt-3"><br><br><br>
-        <p style="color:rgba(255,0,0,0.5);">
-          All in all, student life is no less than perfect. Even though it has many ups and downs, it is all worth it in the end. Our student life determines a lot of things in our lives later on. Therefore, we must strive to be good students not just academically but also in other aspects. It is like a backbone to have a successful life later on.
-          </p>
-      </div>
-
-      <div class="container ">
-        <div class="row">
-          <div class=" col-md-4 "><br><br><br>
-
-            <p class=" text-success">Together, we can achieve our every dream... </p>
-            <p style=" font-size: 40px;"><span class="c1">G</span><span class="c2">e</span><span class="c3">t</span><span class="c4"> O</span><span class="c5">n</span><span class="c6">l</span><span class="c7">i</span><span class="c8">n</span><span class="c9">e</span>
-              <span class="c10"> a</span><span class="c11">n</span><span class="c12">d</span> <br><span class="c13">g</span><span class="c14">r</span><span class="c15">o</span><span class="c16">w</span> <span class="c17">f</span><span class="c18">a</span><span class="c19">s</span><span class="c20">t</span>
-            </p>
-      <!-- Grid column -->
-
     </div>
-    <!-- Grid row -->
-    <div class="container">
+  </div>
+<div class="container">
+  <div class=" col-md-11 mt-3">
+    <p class="about">
+      All in all, student life is no less than perfect. Even though it has many ups and downs, it is all worth it in the end. Our student life determines a lot of things in our lives later on. Therefore, we must strive to be good students not just academically but also in other aspects. It is like a backbone successful life later on.
+    </p>
+  </div>
 
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4">
-          <img src="2.jpg" class="img-fluid rounded-4 shadow-2-strong" alt="Hollywood Sign on The Hill" />
-        </div>
-        <!--Grid column-->
+  <div class="container ">
+    <div class="row">
+      <div class=" col-md-4 ">
+        <p class=" text-success">Together, we can achieve our every dream... </p>
+        <p style=" font-size: 40px;"><span class="c1">G</span><span class="c2">e</span><span class="c3">t</span><span class="c4"> O</span><span class="c5">n</span><span class="c6">l</span><span class="c7">i</span><span class="c8">n</span><span class="c9">e</span>
+          <span class="c10"> a</span><span class="c11">n</span><span class="c12">d</span> <br><span class="c13">g</span><span class="c14">r</span><span class="c15">o</span><span class="c16">w</span> <span class="c17">f</span><span class="c18">a</span><span class="c19">s</span><span class="c20">t</span>
+        </p>
+        <!-- Grid column -->
 
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <img src="3.jpg" class="img-fluid rounded-4 shadow-2-strong" alt="Five Lands National Park" />
-        </div>
-
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <img src="4.jpg" class="img-fluid rounded-4 shadow-2-strong" alt="Los Angeles Skyscrapers" />
-        </div>
-        <!--Grid column-->
       </div>
-      <!--Grid row-->
+      <!-- Grid row -->
+      <div class="container">
 
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4">
-          <img src="5.jpg" class="img-fluid rounded-4 shadow-2-strong" alt="Skyscrapers" />
-        </div>
-        <!--Grid column-->
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <img src="pexels-danny-meneses-943096.jpg" class="img-fluid rounded-4 shadow-2-strong" alt="Hollywood Sign on The Hill" />
+          </div>
+          <!--Grid column-->
 
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <img src="https://media.istockphoto.com/id/1431385377/photo/digital-low-code-software-development-technology-concept-digital-background-concept.jpg?s=1024x1024&w=is&k=20&c=K6UsufTROsrUVBe8p22vc0AdBprak6FpRKRaZhT-YWE=" class="img-fluid rounded-4 shadow-2-strong" alt="coding" />
-        </div>
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <img src="   https://media.istockphoto.com/id/1487030097/photo/low-code-development-system-concept.jpg?s=1024x1024&w=is&k=20&c=DW9gXxVSPaKVMBK1LsVgq7f_SGaTwgIW0JW9AsQX9sk=" class="img-fluid rounded-4 shadow-2-strong" alt="New York City" </div>
-          <div class="row">
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-12 mb-4">
-              <img src="8.jpg" class="img-fluid rounded-4 shadow-2-strong" alt="Skyscrapers" />
-            </div>
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/046.webp" class="img-fluid rounded-4 shadow-2-strong" alt="American Home" />
-            </div>
-            <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <img src="9.jpg" class="img-fluid rounded-4 shadow-2-strong" alt="New York City" </div>
-              <!--Grid row-->
-
-            </div>
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <img src="pexels-anna-shvets-3987110.jpg" class="img-fluid rounded-4 shadow-2-strong" alt="Five Lands National Park" />
           </div>
 
+          <!--Grid column-->
 
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <img src="pexels-anna-shvets-4226122.jpg" class="img-fluid rounded-4 shadow-2-strong" alt="Los Angeles Skyscrapers" />
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <img src="pexels-matheus-bertelli-16094061.jpg" class="img-fluid rounded-4 shadow-2-strong" alt="Skyscrapers" />
+          </div>
+          <!--Grid column-->
 
-</body>
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/045.webp" class="img-fluid rounded-4 shadow-2-strong" alt="New York City" />
+          </div>
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <img src="pexels-andrea-piacquadio-826349.jpg" class="img-fluid rounded-4 shadow-2-strong" alt="New York City" </div>
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-12 mb-4">
+                <img src="pexels-thisisengineering-3861964.jpg" class="img-fluid rounded-4 shadow-2-strong" alt="Skyscrapers" />
+              </div>
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/046.webp" class="img-fluid rounded-4 shadow-2-strong" alt="American Home" />
+              </div>
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4">
+                <img src="pexels-andrea-piacquadio-826349.jpg" class="img-fluid rounded-4 shadow-2-strong" alt="New York City" </div>
+                <!--Grid row-->
 
-</html>
+              </div>
+            </div>
+
+            <footer class="footer">
+              <div class="container-fluid" style=" background-color: #000000; text-align: center;">
+                <h1 class="logo">About Me</h1>
+                <p class=" text-info">I am SATYAM and I am a Student.</p>
+                
+                
+      <p class="about">The very first tip is to have it prepared. Don’t improvise. Have it ready for any professional situation. You can’t hesitate when you introduce yourself. So follow the steps below, write it down, practice, and make sure it’s ready and fresh for when you need it. Drop your scripted introduction in the comments and we'll te did!</p>
+
+               <a href=https://www.instagram.com/satyam75564/.09?igshid=Zzd1YjNoa2Uyam0z" style=" font-size:30px;"><i class="fa fa-instagram"></i></a>
+                <a href="09?igshid=Zzd1YjNoa2Uyam0z" style=" font-size:30px;"><i class="fa fa-telegram"></i></a>
+                <a href=".09?igshid=Zzd1YjNoa2Uyam0z" style=" font-size:30px;"><i class="fa fa-twitter"></i></a>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class=" col-md-10 ">
+
+                  </div>
+
+               
+                </div>
+              </div>
+          </div>
+          <div>
+     <center>
+     <br><br>    
+     <h1 class="logo">Contact Me</h1>
+     <br>
+    <form>
+       <input type="text" placeholder="Your Name"><br><br>
+       <input type="text" placeholder="Your Mail"> <br><br>
+       <input type="text" placeholder="Your Message"><br><br>
+    <br> 
+    <button id="b1">Send Message</button>
+    </form> 
+    </center>
+    <br>
+ </div>
+ </div>
+      </footer>
+  </body>
+      </html
